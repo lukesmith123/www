@@ -12,8 +12,28 @@
   -ms-border-radius:0px!important;
   -o-border-radius:0px!important;
 }
+.ui-icon-globeY {
+  background: url(images/globeY.png) 50% 50% no-repeat;
+  background-size: 24px 24px;
+  background-position: center 20%;
+  border-radius:0px!important;
+  -moz-border-radius:0px!important;
+  -webkit-border-radius:0px!important;
+  -ms-border-radius:0px!important;
+  -o-border-radius:0px!important;
+}
 .ui-icon-checkb {
   background: url(images/check.png) 50% 50% no-repeat;
+  background-size: 24px 24px;
+  background-position: center 20%;
+  border-radius:0px!important;
+  -moz-border-radius:0px!important;
+  -webkit-border-radius:0px!important;
+  -ms-border-radius:0px!important;
+  -o-border-radius:0px!important;
+}
+.ui-icon-checkbY {
+  background: url(images/checkY.png) 50% 50% no-repeat;
   background-size: 24px 24px;
   background-position: center 20%;
   border-radius:0px!important;
@@ -32,6 +52,16 @@
   -ms-border-radius:0px!important;
   -o-border-radius:0px!important;
 }
+.ui-icon-composeY {
+  background: url(images/composeY.png) 50% 50% no-repeat;
+  background-size: 24px 24px;
+  background-position: center 20%;
+  border-radius:0px!important;
+  -moz-border-radius:0px!important;
+  -webkit-border-radius:0px!important;
+  -ms-border-radius:0px!important;
+  -o-border-radius:0px!important;
+}
 .ui-icon-teach {
   background: url(images/teach.png) 50% 50% no-repeat;
   background-size: 24px 24px;
@@ -42,8 +72,29 @@
   -ms-border-radius:0px!important;
   -o-border-radius:0px!important;
 }
+.ui-icon-teachY {
+  background: url(images/teachY.png) 50% 50% no-repeat;
+  background-size: 24px 24px;
+  background-position: center 20%;
+  border-radius:0px!important;
+  -moz-border-radius:0px!important;
+  -webkit-border-radius:0px!important;
+  -ms-border-radius:0px!important;
+  -o-border-radius:0px!important;
+}
 .ui-icon-userb {
   background: url(images/user.png) 50% 50% no-repeat;
+  background-size: 42px 24px;
+  background-position: center 20%;
+  background-color:#FF0;
+  border-radius:0px!important;
+  -moz-border-radius:0px!important;
+  -webkit-border-radius:0px!important;
+  -ms-border-radius:0px!important;
+  -o-border-radius:0px!important;
+}
+.ui-icon-userbY {
+  background: url(images/userY.png) 50% 50% no-repeat;
   background-size: 42px 24px;
   background-position: center 20%;
   background-color:#FF0;
