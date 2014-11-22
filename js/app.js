@@ -1,8 +1,9 @@
 //$(document).ready(function() {
 
 var db;
+var pg_id = 1;
 
-function loadData(pg_id) {
+//function loadData(pg_id) {
 $.ajax({ 
 		url: "http://www.aquintable.com/bboyjams/pick.php", 
 		type: "post", 
@@ -25,7 +26,7 @@ $.ajax({
         alert(thrownError);
 	}
 });
-}
+//}
 
 function parseEvents(){
 	for (var i = 0, len = db.length; i < len; i++) {
