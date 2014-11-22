@@ -79,13 +79,18 @@ function parseLessons() {
 
 function loadNextPage(pg_id, index) {
 	
-	$("#hde").html('<a href="index.html" data-role="button" data-rel="back" data-icon="carat-l" class="ui-btn-left">Back</a><h3 style="text-align:center;">Events</h3>');
+	$("#hde").html('<a href="#" onclick="reloadPage();" data-role="button" data-icon="carat-l" class="ui-btn-left">Back</a><h3 style="text-align:center;">Events</h3>');
 	$("#hde").trigger('create');
 	
-	var str = '<h1>Event Name: ';
+	var str = '<h1>';
 	str += dbe[index].name;
-	str += '</h1>';
-	str += '<h3>Info:</h3>';
+	str += '</h1><h3>Date: ';
+	str += dbe[index].date;
+	str += '</h3><h3>Price: ';
+	str += dbe[index].price;
+	str += '</h3><h3>Location: ';
+	str += dbe[index].location;
+	str += '</h3><h3>Info:</h3>';
 	str += '<p>';
 	str += dbe[index].info;
 	str += '</p>';
@@ -93,4 +98,7 @@ function loadNextPage(pg_id, index) {
 	$("#cnte").html(str);
 }
 
+function reloadPage() {
+	location.reload();
+}
 
