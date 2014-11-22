@@ -79,8 +79,18 @@ function parseLessons() {
 
 function loadNextPage(pg_id, index) {
 	
-	$("#hde").html('<a href="index.html" data-role="button" data-rel="back" data-icon="carat-l" class="ui-btn-left">Back</a><h3 style="text-align:center;padding:0;margin:0;">Events</h3>');
+	$("#hde").html('<a href="index.html" data-role="button" data-rel="back" data-icon="carat-l" class="ui-btn-left">Back</a><h3 style="text-align:center;">Events</h3>');
 	$("#hde").trigger('create');
+	
+	var str = '<h1>Event Name: ';
+	str += dbe[index].name;
+	str += '</h1>';
+	str += '<h3>Info:</h3>';
+	str += '<p>';
+	str += dbe[index].info;
+	str += '</p>';
+	
+	$("#cnte").html(str);
 }
 
 
