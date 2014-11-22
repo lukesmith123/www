@@ -79,8 +79,8 @@ function parseLessons() {
 
 function loadNextPage(pg_id, index) {
 	if(pg_id == 1) {
-		var mywebpage = '<script>loadData(1);</script><div data-role="header" data-position="inline"><form class="ui-filterable" style="margin-right:10px; margin-left:10px;"><input id="filterBasic-inputEvents" data-type="search" data-mini="true" ></form></div><div data-role="content" data-theme="a"></div><div data-role="footer" data-position="fixed" data-tap-toggle="false"><div data-role="navbar"><ul><li><a href="#" data-icon="checkbY" class="ui-btn-active ui-state-persist">Events</a></li><li><a href="news.html" data-icon="globe">News</a></li><li><a href="crews.html" data-icon="userb">Crews</a></li><li><a href="lessons.html" data-icon="teach">Lessons</a></li><li><a href="contact.html" data-icon="compose">Contact</a></li></ul></div></div>';
-		$("#pge").html(mywebpage);
+		var mywebpage = '<div>Test Content</div>';
+		$("#cnte").html(mywebpage);
 	}
 	else if (pg_id == 3) {
 		var mywebpage = '<!DOCTYPE html><html><body><h1>My First Heading</h1><p>My first paragraph.</p></body></html>';
