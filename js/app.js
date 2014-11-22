@@ -79,8 +79,8 @@ function parseLessons() {
 
 function loadNextPage(pg_id, index) {
 	
-	$("#cnte").html("<h1>Events</h1>");
-	$("#cnte").enhanceWithin();
+	$("#hde").html("<h1>Events</h1>");
+	$("#hde").enhanceWithin();
 }
 
 
