@@ -79,7 +79,7 @@ function parseLessons() {
 
 function loadNextPage(pg_id, index) {
 	
-	$("#hde").html("<h1>Events</h1>");
+	$("#hde").html("<h3 style='text-align:center;'>Events</h3>");
 	$("#hde").trigger('create');
 }
 
