@@ -33,9 +33,9 @@ function parseEvents(){
 	  str += '</h1><p>';
 	  str += db[i].date;
 	  str += '</p></a></li>';
-	  $('#listv').append(str);
+	  $('#liste').append(str);
   }
-  $("#listv").listview("refresh");
+  $("#liste").listview("refresh");
 }
 
 function parseCrews() {
@@ -46,9 +46,9 @@ function parseCrews() {
 	  str += '</h1><p>';
 	  str += db[i].location;
 	  str += '</p></a></li>';
-	  $('#listv').append(str);
+	  $('#listc').append(str);
   }
-  $("#listv").listview("refresh");
+  $("#listc").listview("refresh");
 }
 
 function parseLessons() {
@@ -61,9 +61,9 @@ function parseLessons() {
 	  str += '</p><p>';
 	  str += db[i].level;
 	  str += '</p></a></li>';
-	  $('#listv').append(str);
+	  $('#listl').append(str);
   }
-  $("#listv").listview("refresh");
+  $("#listl").listview("refresh");
 }
 
 function loadData2()
