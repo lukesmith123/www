@@ -82,9 +82,9 @@ function loadNextPage(pg_id, index) {
 		var content = '<div>Test Content</div>';
 		$("#cnte").html(content);
 		
-		var header = '<h1>';
+		var header = '<h3>';
 		header += dbe[index].name;
-		header += '<a href="index.html" data-role="button" data-rel="back" data-icon="arrow-l">Back</a>';
+		header += '</h3><a href="index.html" data-role="button" data-rel="back" data-icon="arrow-l">Back</a>';
 		$("#hde").html(header);
 		$("#hde").trigger( "create" );
 	}
