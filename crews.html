@@ -2,29 +2,28 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>title</title>
+	<title>Bboy Jams</title>
 	<link rel="stylesheet" href="themes/bboy.min.css" />
 	<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
 	<link rel="stylesheet" href="js/jquery.mobile.structure-1.4.5.min.css" />
 	<script src="js/jquery-1.11.1.min.js"></script>
 	<script src="js/jquery.mobile-1.4.5.min.js"></script>
     <script src="js/app.js"></script>
-   <script>
-   test();
-   </script>
 </head>
 <body>
 	<div data-role="page" data-theme="a">
-		<div data-role="header" data-position="inline">
+    <script>
+    loadData(3);
+    </script>
+		<div data-role="header" data-position="fixed" data-position="inline">
 		<form class="ui-filterable" style="margin-right:10px; margin-left:10px;">
-    	<input id="filterBasic-inputEvents" data-type="search" data-mini="true" >
+    	<input id="filterBasic-inputCrews" data-type="search" data-mini="true">
 		</form>
 		</div>
         
 		<div data-role="content" data-theme="a">
 		       
-        <ul id="listv" data-role="listview" data-filter="true" data-input="#filterBasic-inputEvents">
-
+        <ul id="listv" data-role="listview" data-filter="true" data-input="#filterBasic-inputCrews">
 		</ul>
            
 		</div>
@@ -32,14 +31,16 @@
           <div data-role="footer" data-position="fixed" data-tap-toggle="false">
     <div data-role="navbar">
       <ul>
-        <li><a href="#" data-icon="checkbY" class="ui-btn-active ui-state-persist">Events</a></li>
+        <li><a href="index.html" data-icon="checkb">Events</a></li>
         <li><a href="news.html" data-icon="globe">News</a></li>
-        <li><a href="crews.html" data-icon="userb">Crews</a></li>
+        <li><a href="#" data-icon="userbY" class="ui-btn-active ui-state-persist">Crews</a></li>
         <li><a href="lessons.html" data-icon="teach">Lessons</a></li>
         <li><a href="contact.html" data-icon="compose">Contact</a></li>
       </ul>
     </div>
   </div>
 	</div>
+    
+
 </body>
 </html>
