@@ -107,12 +107,12 @@ function loadNextPage(pg_id, index) {
 	var str = '<h1>';
 	str += dbc[index].name;
 	str += '</h1><h3>Location: ';
-	str += dbe[index].location;
+	str += dbc[index].location;
 	str += '</h3><h3>Crew Members: ';
-	str += dbe[index].members;
+	str += dbc[index].members;
 	str += '</h3><h3>Info:</h3>';
 	str += '<p>';
-	str += dbe[index].info;
+	str += dbc[index].info;
 	str += '</p>';
 	
 	$("#cntc").html(str);
@@ -123,18 +123,18 @@ function loadNextPage(pg_id, index) {
 	$("#hdl").trigger('create');
 	
 	var str = '<h1>';
-	str += dbc[index].name;
+	str += dbl[index].name;
 	str += '</h1><h3>Experience Level: ';
-	str += dbe[index].level;
+	str += dbl[index].level;
 	str += '</h3><h3>When: ';
-	str += dbe[index].when;
+	str += dbl[index].when;
 	str += '</h3><h3>Cost: £';
-	str += dbe[index].cost;
+	str += dbl[index].cost;
 	str += '</h3><h3>Location: ';
-	str += dbe[index].location;
+	str += dbl[index].location;
 	str += '</h3><h3>Info:</h3>';
 	str += '<p>';
-	str += dbe[index].info;
+	str += dbl[index].info;
 	str += '</p>';
 	
 	$("#cntl").html(str);
