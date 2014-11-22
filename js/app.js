@@ -2,9 +2,6 @@ var dbe;
 var dbc;
 var dbl;
 
-var sPGID;
-var sIDX;
-
 function loadData(pg_id) {
 $.ajax({ 
 		url: "http://www.aquintable.com/bboyjams/pick.php", 
@@ -82,26 +79,8 @@ function parseLessons() {
 
 function loadNextPage(pg_id, index) {
 	
-	sPGID = pg_id;
-	sIDX = index;
-	
-	window.location.href = "templatee.html";
+	$("#cnte").html("<h1>Events</h1>");
+	$("#cnte").enhanceWithin();
 }
 
-function loadTemplatee() {
-	alert(sIDX);
-	var content = '<h1>Event Name: ';
-	content += dbe[sIDX].name;
-	content += '</h1>';
-	//content += '<h3>';
-	//content += dbe[sIDX].date;
-	//content += '</h3>';//<h3>Price: ';
-	//content += dbe[sIDX].price;
-	//content += '</h3><h3>Location: ';
-	//content += dbe[sIDX].location;
-	//content += '</h3><h3>Info: ';
-	//content += dbe[sIDX].info;
-	//content += '</h3>'
-	$("#cnte").html(content);
-}
 
