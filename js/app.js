@@ -89,6 +89,7 @@ function loadNextPage(pg_id, index) {
 }
 
 function loadTemplatee() {
+	alert(sIDX);
 	var content = '<h1>Event Name: ';
 	content += dbe[sIDX].name;
 	content += '</h1>';
