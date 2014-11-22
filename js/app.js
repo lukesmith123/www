@@ -94,13 +94,13 @@ function loadTemplatee() {
 	content += '</h1>';
 	content += '<h3>';
 	content += dbe[sIDX].date;
-	content += '</h3><h3>Price: ';
-	content += dbe[sIDX].price;
-	content += '</h3><h3>Location: ';
-	content += dbe[sIDX].location;
-	content += '</h3><h3>Info: ';
-	content += dbe[sIDX].info;
-	content += '</h3>'
+	content += '</h3>';//<h3>Price: ';
+	//content += dbe[sIDX].price;
+	//content += '</h3><h3>Location: ';
+	//content += dbe[sIDX].location;
+	//content += '</h3><h3>Info: ';
+	//content += dbe[sIDX].info;
+	//content += '</h3>'
 	$("#cnte").html(content);
 }
 
