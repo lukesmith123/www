@@ -79,6 +79,8 @@ function parseLessons() {
 
 function loadNextPage(pg_id, index) {
 	
+	if(pg_id == 1)
+	{
 	$("#hde").html('<a href="#" onclick="reloadPage();" data-role="button" data-icon="carat-l" class="ui-btn-left">Back</a><h3 style="text-align:center;">Events</h3>');
 	$("#hde").trigger('create');
 	
@@ -86,7 +88,7 @@ function loadNextPage(pg_id, index) {
 	str += dbe[index].name;
 	str += '</h1><h3>Date: ';
 	str += dbe[index].date;
-	str += '</h3><h3>Price: ';
+	str += '</h3><h3>Price: £';
 	str += dbe[index].price;
 	str += '</h3><h3>Location: ';
 	str += dbe[index].location;
@@ -96,6 +98,47 @@ function loadNextPage(pg_id, index) {
 	str += '</p>';
 	
 	$("#cnte").html(str);
+	}
+	else if(pg_id == 3)
+	{
+		$("#hdc").html('<a href="#" onclick="reloadPage();" data-role="button" data-icon="carat-l" class="ui-btn-left">Back</a><h3 style="text-align:center;">Crews</h3>');
+	$("#hdc").trigger('create');
+	
+	var str = '<h1>';
+	str += dbc[index].name;
+	str += '</h1><h3>Location: ';
+	str += dbe[index].location;
+	str += '</h3><h3>Crew Members: ';
+	str += dbe[index].members;
+	str += '</h3><h3>Info:</h3>';
+	str += '<p>';
+	str += dbe[index].info;
+	str += '</p>';
+	
+	$("#cntc").html(str);
+	}
+	else if(pg_id == 4)
+	{
+		$("#hdl").html('<a href="#" onclick="reloadPage();" data-role="button" data-icon="carat-l" class="ui-btn-left">Back</a><h3 style="text-align:center;">Lessons</h3>');
+	$("#hdl").trigger('create');
+	
+	var str = '<h1>';
+	str += dbc[index].name;
+	str += '</h1><h3>Experience Level: ';
+	str += dbe[index].level;
+	str += '</h3><h3>When: ';
+	str += dbe[index].when;
+	str += '</h3><h3>Cost: £';
+	str += dbe[index].cost;
+	str += '</h3><h3>Location: ';
+	str += dbe[index].location;
+	str += '</h3><h3>Info:</h3>';
+	str += '<p>';
+	str += dbe[index].info;
+	str += '</p>';
+	
+	$("#cntl").html(str);
+	}
 }
 
 function reloadPage() {
