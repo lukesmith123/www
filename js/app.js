@@ -84,7 +84,7 @@ function loadNextPage(pg_id, index) {
 		
 		var header = '<a href="#" data-role="button" data-rel="back" data-icon="arrow-l">Back</a>';
 		$("#hde").html(header);
-		$("#hde").page();
+		$("#hde").trigger( "create" );
 	}
 	else if (pg_id == 3) {
 		var mywebpage = '<!DOCTYPE html><html><body><h1>My First Heading</h1><p>My first paragraph.</p></body></html>';
