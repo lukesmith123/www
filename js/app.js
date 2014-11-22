@@ -79,8 +79,11 @@ function parseLessons() {
 
 function loadNextPage(pg_id, index) {
 	if(pg_id == 1) {
-		var mywebpage = '<div>Test Content</div>';
-		$("#cnte").html(mywebpage);
+		var content = '<div>Test Content</div>';
+		$("#cnte").html(content);
+		
+		var header = '<a href="#" data-role="button" data-rel="back" data-icon="arrow-l">Back</a>';
+		$("#hde").html(header);
 	}
 	else if (pg_id == 3) {
 		var mywebpage = '<!DOCTYPE html><html><body><h1>My First Heading</h1><p>My first paragraph.</p></body></html>';
