@@ -92,9 +92,9 @@ function loadTemplatee() {
 	var content = '<h1>Event Name: ';
 	content += dbe[sIDX].name;
 	content += '</h1>';
-	content += '<h3>';
-	content += dbe[sIDX].date;
-	content += '</h3>';//<h3>Price: ';
+	//content += '<h3>';
+	//content += dbe[sIDX].date;
+	//content += '</h3>';//<h3>Price: ';
 	//content += dbe[sIDX].price;
 	//content += '</h3><h3>Location: ';
 	//content += dbe[sIDX].location;
