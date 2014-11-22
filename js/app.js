@@ -85,34 +85,22 @@ function loadNextPage(pg_id, index) {
 	sPGID = pg_id;
 	sIDX = index;
 	
-	window.location.href = "template.html";
+	window.location.href = "templatee.html";
 }
 
-function loadTemplate() {
-	
+function loadTemplatee() {
+	var content = '<h1>Event Name: ';
+	content += dbe[sIDX].name;
+	content += '</h1>';
+	content += '<h3>';
+	content += dbe[sIDX].date;
+	content += '</h3><h3>Price: ';
+	content += dbe[sIDX].price;
+	content += '</h3><h3>Location: ';
+	content += dbe[sIDX].location;
+	content += '</h3><h3>Info: ';
+	content += dbe[sIDX].info;
+	content += '</h3>'
+	$("#cnte").html(content);
 }
 
-function TEMP() {
-		if(pg_id == 1) {
-		var content = '<div>Test Content</div>';
-		$("#cnte").html(content);
-		
-		var header = '<a href="index.html" data-role="button" data-rel="back" data-icon="carat-l" class="ui-btn-left">Back</a><h3>';
-		header += dbe[index].name;
-		header += '</h3>';
-		$("#hde").html(header);
-		$("#hde").trigger( "create" );
-	}
-	else if (pg_id == 3) {
-		var mywebpage = '<!DOCTYPE html><html><body><h1>My First Heading</h1><p>My first paragraph.</p></body></html>';
-
-		element = document.getElementById('dom-id');  
-		element.innerHTML = mywebpage;
-	}
-	else if (pg_id == 4) {
-		var mywebpage = '<!DOCTYPE html><html><body><h1>My First Heading</h1><p>My first paragraph.</p></body></html>';
-
-		element = document.getElementById('dom-id');  
-		element.innerHTML = mywebpage;
-	}
-}
