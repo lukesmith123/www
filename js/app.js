@@ -82,7 +82,7 @@ function loadNextPage(pg_id, index) {
 		var content = '<div>Test Content</div>';
 		$("#cnte").html(content);
 		
-		var header = '<a href="index.html" data-role="button" data-rel="back" data-icon="carat-l">Back</a><h3>';
+		var header = '<a href="index.html" data-role="button" data-rel="back" data-icon="carat-l" class="ui-btn-left">Back</a><h3>';
 		header += dbe[index].name;
 		header += '</h3>';
 		$("#hde").html(header);
