@@ -9,12 +9,12 @@
 	<script src="js/jquery-1.11.1.min.js"></script>
 	<script src="js/jquery.mobile-1.4.5.min.js"></script>
     <script src="js/app.js"></script>
-    <script type='text/javascript'>
-	loadData(4);
-	</script>
 </head>
 <body>
 	<div data-role="page" data-theme="a">
+        <script>
+		loadData(4);
+		</script>
 		<div data-role="header" data-position="fixed" data-position="inline">
 		<form class="ui-filterable" style="margin-right:10px; margin-left:10px;">
     	<input id="filterBasic-inputLessons" data-type="search" data-mini="true">
@@ -23,7 +23,7 @@
         
 		<div data-role="content" data-theme="a">
 		       
-        <ul id="listv" data-role="listview" data-filter="true" data-input="#filterBasic-inputLessons">
+        <ul id="listl" data-role="listview" data-filter="true" data-input="#filterBasic-inputLessons">
 		</ul>
            
 		</div>
