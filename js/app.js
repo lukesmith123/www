@@ -80,7 +80,7 @@ function parseLessons() {
 function loadNextPage(pg_id, index) {
 	
 	$("#hde").html("<h1>Events</h1>");
-	$("#hde").enhanceWithin();
+	$("#hde").trigger('create');
 }
 
 
