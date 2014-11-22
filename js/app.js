@@ -2,6 +2,9 @@ var dbe;
 var dbc;
 var dbl;
 
+var sPGID;
+var sIDX;
+
 function loadData(pg_id) {
 $.ajax({ 
 		url: "http://www.aquintable.com/bboyjams/pick.php", 
@@ -78,7 +81,19 @@ function parseLessons() {
 }
 
 function loadNextPage(pg_id, index) {
-	if(pg_id == 1) {
+	
+	sPGID = pg_id;
+	sIDX = index;
+	
+	window.location.href = "template.html";
+}
+
+function loadTemplate() {
+	
+}
+
+function TEMP() {
+		if(pg_id == 1) {
 		var content = '<div>Test Content</div>';
 		$("#cnte").html(content);
 		
