@@ -112,7 +112,7 @@ function loadNextPage(pg_id, index) {
 	str += dbc[index].members;
 	str += '</h3><h3>Info:</h3>';
 	str += '<p>';
-	str += dbc[index].info;
+	str += dbc[index].information;
 	str += '</p>';
 	
 	$("#cntc").html(str);
@@ -123,7 +123,7 @@ function loadNextPage(pg_id, index) {
 	$("#hdl").trigger('create');
 	
 	var str = '<h1>';
-	str += dbl[index].name;
+	str += dbl[index].instructor;
 	str += '</h1><h3>Experience Level: ';
 	str += dbl[index].level;
 	str += '</h3><h3>When: ';
@@ -134,7 +134,7 @@ function loadNextPage(pg_id, index) {
 	str += dbl[index].location;
 	str += '</h3><h3>Info:</h3>';
 	str += '<p>';
-	str += dbl[index].info;
+	str += dbl[index].information;
 	str += '</p>';
 	
 	$("#cntl").html(str);
