@@ -90,7 +90,7 @@ function loadNextPage(pg_id, index) {
 	if(dbe[index].hasPoster == 1) {
 		str += '</h1><img src="';
 		str += dbe[index].poster;
-		str += '">';
+		str += '" width="100%">';
 	}
 	else {
 		str += '</h1>';	
