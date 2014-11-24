@@ -86,7 +86,17 @@ function loadNextPage(pg_id, index) {
 	
 	var str = '<h1>';
 	str += dbe[index].name;
-	str += '</h1><h3>Date: ';
+	
+	if(dbe[index].hasPoster == 1) {
+		str += '</h1><img src="';
+		str += dbe[index].poster;
+		str += '">';
+	}
+	else {
+		str += '</h1>';	
+	}
+	
+	str += '<h3>Date: ';
 	str += dbe[index].date;
 	str += '</h3><h3>Price: £';
 	str += dbe[index].price;
